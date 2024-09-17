@@ -23,4 +23,6 @@ body{
 
 nav h1{
   display: inline-block;
+  color:red;
+  text-decoration: none;
 }
