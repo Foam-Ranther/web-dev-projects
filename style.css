@@ -1,0 +1,26 @@
+:root{
+    --primary-color: lightgreen;
+     --secondary-color: black;
+}
+
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: lightgreen;
+  }
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+
+#icon{
+    height: 40px;
+    cursor: pointer;
+    float: right;
+}
+
+nav h1{
+  display: inline-block;
+}
