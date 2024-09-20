@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             }
             else{
                 let final_value=rate*amount.value
-                document.querySelector('#rates').innerHTML=`1 USD is equal to ${final_value}`;
+                document.querySelector('#rates').innerHTML=`${amount.value} USD is equal to ${final_value}`;
             }
             input.value="";
             amount.value="";
