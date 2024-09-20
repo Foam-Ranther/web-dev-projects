@@ -22,11 +22,19 @@ body{
 }
 
 nav h1{
-  display: inline-block;
+  display:flex;
+  justify-content: center;
 
-  color:red;
+  /* color:var(--primary-color); */
   text-decoration:underline;
   text-decoration-color:blue;
   
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    border:1px solid black;
 }
 
