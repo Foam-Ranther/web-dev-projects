@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+    align-items:center;
+    background-color: black;
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    background-color: white;
+    border:1px solid black;
+}
+.container .heading{
+    color :black;
+}
+.main{
+    display:flex;
+    gap:3px;
+}
+.hours,.minutes,.seconds{
+    display:flex;
+    gap:3px;
+    padding: 3px 5px 3px 5px;
+    background-color: rgba(151, 148, 148, 0.65);
+
+}
+.box{
+    /* border:1px solid black; */
+    height: 40px;
+    display:flex;
+    align-items: center;
+    background-color: rgb(199, 199, 209);
+    padding:5px;
+    border-radius: 5px;
+}

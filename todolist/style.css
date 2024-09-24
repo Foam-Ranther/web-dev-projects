@@ -1,8 +1,19 @@
 /* *{
     margin:0px
 } */
+:root{
+    --dark :#374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --light:#EEE;
+    --pink:#EC4899;
+    --purple:#8B5CF6;
+    --gray:#6B7280;
+}
 body{
     display:flex;
+    background-color: var(--darkest);
+    color:var(--light);
     justify-content: center;
     flex-direction: column;
     align-items:center;
@@ -13,7 +24,7 @@ body{
     justify-content: center;
     margin:auto;
     text-decoration:underline;
-    
+    color:var(--gray);
     /* border:1px solid black; */
 
 }
@@ -33,7 +44,26 @@ body{
 }
 #in_form :nth-child(1){
     width:50%;
+    border:none;
+    outline:none;
+    /* color : var(--light); */
+    appearance: none;
+    font-size: 1.5em;
 }
+#in_form :nth-child(2){
+    border:none;
+    outline:none;
+    appearance: none;
+    cursor:pointer;
+    border-radius: 10px;
+}
+#submit :hover{
+background-color: var(--pink);
+color:red;
+}
+/* #in_form :nth-child(2) :hover{
+    background-color: #EC4899;
+} */
 .tasks_list{
     /* border:1px solid black; */
     display:flex;
@@ -50,25 +80,53 @@ body{
 .task{
     margin-top:10px;
     display:flex;
-    gap:10px;
-    width:80%;
+    gap:30px;
+    width:70%;
     /* justify-content: space-around; */
-    justify-content: center;
+    /* justify-content: center;
+    align-items: center; */
     padding:20px;
    
-    background-color:grey;
-    border-radius:5px;
+    background-color:var(--darker);
+    border-radius:30px;
 }
 .task .first{
     width:80%;
 }
 .task .first input{
     width:100%;
+    background-color: var(--dark);
+   color:var(--light);
+   border:none;
+   outline:none;
+   appearance: none;
+   font-size: 1.25em;
+   
+   padding-left: 10px;
     /* padding:auto 30px auto 10px; */
-    border-radius:5px;
+    border-radius:15px;
+}
+.task .second{
+    display:flex;
+    gap:10px 5px;
+    
+
 }
 .button{
-    background-color: orange;
+    background-color: rgb(111, 206, 84);
     color:white;
-    border-radius:5px;
+    border-radius:10px;
+    font-size: 1.25;
+    padding:5px;
+    border:none;
+    outline:none;
+    appearance: none;
+    cursor: pointer;
+}
+.button :hover{
+    opacity: 0.8;
+    background-color: var(--pink);
+}
+.button :active{
+    opacity:0.6;
 }
